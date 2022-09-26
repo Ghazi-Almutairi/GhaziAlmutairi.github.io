@@ -1,0 +1,140 @@
+/**/
+body{
+    font-family: Arial,helvetica,sans-serif;
+    background-color: antiquewhite;
+}
+img{
+    border: solid 10px green;
+}
+h1{
+    border: 5px dotted pink;
+}
+blockquote{
+    font-family: "Agency FB";
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+}
+.bigBold{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+cite{
+    font-size: 2rem;
+}
+ul li a{
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+}
+ul li a:visited{
+    color: brown;
+
+}
+ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+    background-color: green;
+}
+a.HarvardRed:hover{
+    background-color: red;
+
+}
+div{
+    border: 5px blue solid;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.box1{
+    border-color: red;
+    width: 10rem;
+    height: 25rem;
+}
+.box2 p{
+    border: 5px green solid;
+    margin-top: 0;
+}
+.box2 h1{
+    margin: 0;
+}
+.box3{
+    background-image: url("http://placekitten.com/200/300");
+    height:10rem
+}
+nav{
+    border: 0px red solid;
+}
+nav ul{
+    list-style-type: none;
+    border: 0px darkslateblue dashed;
+    margin: 0;
+    padding: 0;
+
+}
+nav ul li{
+    border: 0px black dotted;
+    text-align: center;
+    margin: 0;
+    padding: 0rem;
+    display: inline-block;
+
+}
+/*nav ul li:hover{*/
+/*    background-color: yellow;*/
+/*}*/
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+nav ul li a:visited{
+    color: black;
+
+}
+nav ul li a:hover {
+    color: black;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    background-color: yellow;
+    display: block;
+    padding: 0.1rem;
+}
+.floatleft{
+    float:left;
+          /*T R    B    L*/
+    margin: 0 1rem 1rem 0;
+}
+article{
+    width: 30rem;
+    margin: 0 auto;
+    border: 4px red solid;
+
+}
+article:after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+.floatRight{
+    float:right;
+          /*T R    B    L*/
+    margin: 0 1rem 1rem 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: nowrap;
+    /*flex-flow: column;*/
+    /*flex-flow: row;*/
+}
+li{
+    flex-basis: 10%;
+
+    border: 3px solid tomato ;
+}

@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kavivanar', cursive;
+    font-weight: normal;
+}
+h2 {
+    font-size: 2rem;
+    color: #A51F10;
+    margin: 0;
+}
+a {
+    color: #DA0090;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.posted {
+    font-size: 0.8rem;
+    color: #89A611;
+}
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+}
+.wrapper{
+    /*border: 3px solid green;*/
+    /*flex-flow: nowrap;*/
+}
+header {
+    display: flex;
+    /*border: 3px solid green;*/
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.leftheader{
+    /*border: 7px solid red;*/
+    /*T R    B    L*/
+    /*margin: 0 0 0 40rem;*/
+    padding: 0;
+    /*width: 11rem;*/
+    display: inline-block;
+}
+.rightheader{
+    /*T R    B    L*/
+    margin: 4rem 0 0 0;
+    /*border: 7px solid red;*/
+    float: start;
+    /*flex-wrap: nowrap;*/
+
+}
+.rightheader h1{
+    margin: 0;
+    font-size: 3rem;
+    color: pink;
+}
+.rightheader p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+nav{
+    margin-bottom: 1rem;
+}
+nav ul{
+    margin:  0 2rem 0 2rem;
+    display: flex;
+    list-style-type: none;
+    border-top: 3px pink solid;
+    border-bottom: 3px pink solid;
+}
+nav ul li{
+    flex-basis: 11%;
+    margin:0;
+    padding: 0;
+    /*border: 3px solid tomato ;*/
+    justify-content: space-around;
+    text-align: center;
+}
+nav ul li:hover{
+    background-color: #e9bac4;
+}
+
+section :hover{
+    background-color: #e9bac4;
+}
+section article img{
+    /*T R    B    L*/
+    border-radius: 5rem  2rem 2rem 5rem;
+    display: inline-block;
+    float:left;
+    /*T R    B    L*/
+    margin: 0 1rem 5rem 0;
+    padding-left: 2rem;
+}
+section article:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+section{
+    /*T R    B    L*/
+    margin:  0 2rem 0 2rem;
+    border-bottom: 0.3rem solid pink;
+}
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    /*T R    B    L*/
+    /*margin:  0 2rem 0 2rem;*/
+    border-top: 0.3rem solid hotpink;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    /*margin:  0 0rem 0 48rem;*/
+    text-align: center;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    /*margin:  0 0rem 0 48rem;*/
+    text-align: center;
+}
+footer ul li :hover {
+    background-color: pink;
+    /*opacity: 10;*/
+    border-radius: 50rem;
+}
