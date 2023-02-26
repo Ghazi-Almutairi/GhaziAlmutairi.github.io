@@ -1,0 +1,97 @@
+body{
+    margin: 2rem;
+    padding:0;
+    background-color: #d6dce4;
+    color: white;
+
+}
+body > div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+            "Daniel       Daniel"
+            "Jonathan     Kira"
+            "Jeanette     Kira"
+            "Patrick     Patrick"
+;
+    gap: 1rem;
+}
+div > div:first-child:not(.Header){
+    background-color: #7441c7;
+    grid-area: Daniel;
+
+}
+div > div:nth-child(2){
+    background-color: #48556a;
+    grid-area: Jonathan;
+
+}
+div > div:nth-child(3){
+    background-color: #fdfdfd;
+    grid-area: Kira;
+    color: #48556a;
+
+}
+div > div:nth-child(4){
+    background-color: #fdfdfd;
+    grid-area: Jeanette;
+    color: #48556a;
+
+}
+div > div:nth-child(5){
+    background-color: #19212e;
+    grid-area: Patrick;
+
+}
+div > div:not(.Header){
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+            "header     header          header"
+            "section    section         section"
+            "blockquote     blockquote      blockquote"
+;
+    gap:2rem ;
+
+}
+div > div > .Header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 99%;
+    grid-template-areas:
+            "img Header"
+            "img Graduate";
+    gap: 0 ;
+
+}
+div > div:first-child > .Header{
+    grid-template-columns: 1fr 99%;
+
+}
+div > div:last-child > .Header{
+    grid-template-columns: 1fr 99%;
+
+}
+
+div > div > .Header >img{
+    grid-area: img;
+    border-radius: 100%;
+}
+ div > .Header >header{
+    grid-area: Header;
+
+}
+ div > .Header >Graduate{
+    grid-area: Graduate;
+
+}
+div > div > section{
+    grid-area: section;
+
+}
+div > div > blockquote{
+    grid-area: blockquote;
+
+}
